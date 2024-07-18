@@ -1,0 +1,68 @@
+@import url("../../root.css");
+.product {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+.Product{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color:black;
+    margin-bottom: 200px;
+    position:relative;
+    min-height: 100%;
+}
+.th{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    text-align: left;
+    border: 1px solid black;
+    background-color: #757575;
+    color: #fff;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #757575;
+    color: #fff;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+}
+.product-input{
+    width:100%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+.tr{
+    background-color: #fff;
+    border: 1px solid #000000;
+}
+.product-container{
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+.product-table{
+    width: 50%;
+    border: 1px solid #000000;
+}
+.FontAwesomeIcon{
+    cursor: pointer;
+}

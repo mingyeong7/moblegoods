@@ -1,0 +1,26 @@
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .modal-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    width: 360px;
+    height: 500px;
+    padding: 40px;
+  }

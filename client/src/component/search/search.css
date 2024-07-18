@@ -1,0 +1,127 @@
+.search-container {
+  width: 100vw;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  background: var(--c-bg-white);
+  display: flex;
+     justify-content: space-between;
+  border-bottom: 2px solid var(--c-lightgray);
+  z-index: 1;
+}
+
+.header-profile {
+  margin-right: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-profile-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.header-profile-info {
+  margin-left: 10px;
+  width: 100%;
+}
+
+.header-profile-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--c-black);
+  text-align: left;
+}
+
+.header-profile-icon {
+  width: 35px;
+  color: var(--c-darkgray);
+}
+.search-input{
+  width: 200px;
+  border: 1px solid black;
+  font-size: 11px;
+  padding: 3px 6px;
+}
+.search-input-wrap{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.search-box {
+  height: 25px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid var(--c-lightgray);
+}
+.search-input {
+  width: 200px;
+  border: 1px solid black;   
+  padding: 3px 6px;
+  margin-right: 10px;
+  height: 30px;
+}
+.search-btn {
+  width: 40px;
+  cursor: pointer;
+  height: 30px;
+  border: 1px solid var(--c-darkgray);
+  box-shadow: 1px 1px 1px 1px var();
+  background-color: var(--c-lightgray);
+}
+.select-date{
+  border: 1px solid #000000;
+  height: 30px;
+  margin-right: 10px;
+}
+.search-table-head th {
+  top: 0;
+  background-color: var(--c-darkgray);
+  color: var(--c-bg-white);
+  z-index: 1;
+}
+.search-table-container {
+  display: flex;
+  width: 1200px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 25px;
+  background-color: var(--c-bg-white);
+  box-shadow: 0 0 0 0.2px var(--c-black);
+  margin-bottom: 10px;
+  z-index: -1;
+}
+.search-container {
+  width: 360px;
+  height: 480px;
+  padding: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: content-box;
+  border:1px solid #000000
+}
+.add-btn {
+  width: 60px;
+  cursor: pointer;
+  height: 30px;
+  border: 1px solid var(--c-darkgray);
+  box-shadow: 1px 1px 1px 1px var();
+  background-color: var(--c-lightgray);
+  margin-left: 1080px;
+}
+.add-notice-btn {
+  width: 60px;
+  cursor: pointer;
+  height: 30px;
+  border: 1px solid var(--c-darkgray);
+  box-shadow: 1px 1px 1px 1px var();
+  background-color: var(--c-lightgray);
+  margin-left: 1070px;
+}

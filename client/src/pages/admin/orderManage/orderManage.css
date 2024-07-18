@@ -1,0 +1,372 @@
+@import url("../../../root.css");
+
+.orderManage-wrapper form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.orderManage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: var(--c-lightgray);
+  flex-direction: column;
+  align-items: center;
+}
+
+.orderManage-content-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.orderManage-header {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.orderManage-title {
+  display: flex;
+  width: auto;
+  height: inherit;
+  font-size: 18px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+}
+
+.orderManage-select-container,
+.orderManage-select-container > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+}
+
+.orderManage-select-container > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.orderManage-select-container {
+  box-shadow: 0 0 0 0.5px var(--c-darkgray);
+}
+
+.orderManage-select-box {
+  display: flex;
+  height: 25px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid var(--c-lightgray);
+}
+
+.orderManage-select-label {
+  display: flex;
+  height: 100%;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: var(--c-bg-white);
+  background-color: var(--c-darkgray);
+}
+
+.orderManage-select-item {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.orderManage-orderNumber-search-input {
+  width: 200px;
+  border: 1px solid black;
+  font-size: 11px;
+  padding: 3px 6px;
+  margin-right: 10px;
+}
+
+.orderManage-select-item > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.orderManage-select-date {
+  width: 70px;
+  display: flex;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.orderManage-datePicker-wrapper .react-datepicker {
+  /* position: relative; */
+  /* z-index: 9999 !important; */
+  position: absolute !important; /* z-index가 작동하도록 설정 */
+  z-index: 1000 !important;
+}
+
+.react-datepicker__input-container input {
+  width: 200px !important;
+  padding: 3px 6px !important;
+  text-align: center !important;
+  letter-spacing: 1px !important;
+  border: 1px solid var(--c-darkgray) !important;
+  font-size: 11px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.orderManage-datePicker-wrapper react-datepicker-ignore-onclickoutside {
+  width: 13px !important;
+  height: 13px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.react-datepicker__close-icon::after {
+  background-color: #ff5733 !important; /* 원하는 배경색으로 변경 */
+  color: #fff !important; /* 원하는 텍스트 색상으로 변경 */
+  border-radius: 50% !important;
+  height: 11px !important;
+  width: 11px !important;
+  padding: 1px !important;
+  font-size: 11px !important;
+  text-align: center !important;
+  display: inline-block !important;
+  box-sizing: content-box !important;
+}
+
+.orderManage-search-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orderManage-search-btn {
+  width: 40px;
+  cursor: pointer;
+  height: 20px;
+  border: 1px solid var(--c-darkgray);
+  box-shadow: 1px 1px 1px 1px var(--c-lightgray);
+  background-color: var(--c-lightgray);
+}
+
+.orderManage-search-btn:active,
+.orderManage-search-last-btn:active {
+  background-color: var(--c-darkgray);
+  color: var(--c-bg-white);
+}
+
+.orderManage-search-last-btn-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.orderManage-search-last-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  cursor: pointer;
+  height: 30px;
+  border: 1px solid var(--c-darkgray);
+  box-shadow: 1px 1px 1px 1px var(--c-lightgray);
+  background-color: var(--c-lightgray);
+}
+
+.orderManage-check {
+  display: flex;
+  align-items: center;
+}
+
+.orderManage-table-container {
+  height: 430px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 25px;
+  background-color: var(--c-bg-white);
+  box-shadow: 0 0 0 0.2px var(--c-black);
+  margin-bottom: 10px;
+  z-index: -1;
+}
+
+.orderManage-table-con {
+  width: 100%;
+  height: inherit;
+}
+
+.orderManage-table-summary {
+  padding: 5px;
+  font-size: 13px;
+  color: var(--c-black);
+}
+
+.orderManage-table-box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  height: 360px;
+  /* box-shadow: 0 0 0 0.5px var(--c-black); */
+  background-color: var(--c-lightgray);
+}
+
+.orderManage-table-box::-webkit-scrollbar {
+  width: 10px;
+}
+
+.orderManage-table-box::-webkit-scrollbar-thumb {
+  background-color: var(--c-darkgray);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.orderManage-table-box::-webkit-scrollbar-track {
+  background-color: var(--c-bg-white);
+  /* box-shadow: inset 0px 0px 5px white; */
+  border-radius: 10px;
+}
+
+.orderManage-table {
+  width: 100%;
+  border-collapse: collapse;
+  z-index: 0;
+}
+
+.orderManage-table-head th {
+  position: sticky;
+  top: 0;
+  background-color: var(--c-darkgray);
+  color: var(--c-bg-white);
+  z-index: 1;
+}
+
+.orderManage-table th,
+.orderManage-table td {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  border: 1px solid var(--c-black);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.orderManage-table th {
+  height: 25px;
+}
+
+.orderManage-table td {
+  height: 25px;
+  padding: 3px;
+  /* display:; */
+}
+
+.orderManage-page-btn-box {
+  background: none;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.orderManage-page-btn {
+  background: none;
+  display: flex;
+  border-bottom: 1px solid var(--c-black);
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.orderManage-page-num {
+  display: flex;
+  cursor: pointer;
+  background: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.orderManage-page-num.active {
+  font-weight: bold;
+  color: var(--c-point);
+}
+
+.orderManage-table-item-orderNum {
+  color: inherit;
+  text-decoration: none;
+  padding: 2px 3px;
+  border-bottom: 1px solid var(--c-black);
+}
+
+.orderManage-top {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.orderManage-status-delete-btn {
+  width: 70px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: var(--c-bg-white);
+  background-color: var(--c-point);
+  box-shadow: 0 0 0.5px 0.2px var(--c-black);
+  cursor: pointer;
+}
+
+.orderManage-status-delete-btn:active {
+  color: var(--c-point);
+  background-color: var(--c-bg-white);
+  box-shadow: 0 0 0.5px 0.2px var(--c-black);
+}
